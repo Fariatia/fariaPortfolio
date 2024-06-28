@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <p>Let me Help you</p>
+        <h1 class="firstspacing">
+          Write it Right
+        </h1>
+        <div class="vertical-line"></div>
+
+        <p>FARIA TIAMIYU</P>
+        <p>FREELANCE CREATIVE WRITER & EDITOR</p>
+        <a class="workwithmebutton" href=#contact>
+          Work with me
+        </a>
+    </section>
+
+    <section id="about">
+      <div class="about-content">
+        <img src="C:\Users\Fariha\Documents\Portfolio web\image 1.jpg"alt="FARIA" class="about-image">
+        <div class="text-content">
+          <h2>About Me</h2>
+          <p>
+            Welcome to my portfolio! I am Faria Tiamiyu-Folarin, a passionate creative writer with a knack for crafting compelling narratives and engaging content.
+          </p>
+          <p>
+            My journey into the world of writing began with a love for storytelling, which has evolved into a professional career dedicated to helping businesses and individuals communicate their messages effectively.
+          </p>
+    
+          <a class="workwithmebutton2" href=#contact>
+            Work with me
+          </a>
+
+        </div>
+      </div>
+
+    </section>
+
+    <section id="services">
+      <h2>My Services</h2>
+      <p>My expertise spans several key areas:</p>
+
+      <div class="servicesboxes">
+        
+        <div id="box">
+          <h3>Content Strategy</h3>
+          <p>Developing comprehensive content plans that align with business goals and audience interests.</p>
+        </div>
+
+        <div id="box">
+          <h3>Search Engine Optimization Writing</h3>
+          <p>Integrating keywords naturally to improve search engine rankings and drive organic traffic.</p>
+        </div>
+
+        <div id="box">
+          <h3>Copywriting</h3>
+          <p>Crafting persuasive and compelling copy for websites, ads, and social media.</p>
+        </div>
+
+        <div id="box">
+          <h3>Editing and Proofreading</h3>
+          <p>Ensuring every piece of content is polished, error-free, and ready for publication.</p>
+        </div>
+
+      </div>
+
+    </section>
+  
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="portfolio-item">
+        <img src="project1.jpg" alt="Project 1">
+        <h3>Project 1</h3>
+        <p>Description of Project 1</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="project2.jpg" alt="Project 2">
+        <h3>Project 2</h3>
+        <p>Description of Project 2</p>
+      </div>
+  
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="portfoliosubmit_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+
+    </section>
+
+    <footer class="rights">
+      <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

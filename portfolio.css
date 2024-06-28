@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap'); /* Use a similar font since "Playwrite NG Modern" is not found */
+
+body {
+  font-family: 'Playwrite NG Modern', cursive; /* Corrected to a valid font family */
+  margin: 0;
+  padding: 0;
+  background-image: url(https://images.unsplash.com/photo-1555601568-c9e6f328489b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;  
+  color: #343434;
+}
+
+.fancy-handwriting {
+  font-family: 'Playwrite NG Modern', cursive; /* Corrected to match the imported font */
+  font-size: 24px; 
+  font-optical-sizing: auto;
+  font-weight: 400; /* Added missing semicolon */
+  font-style: normal;
+  line-height: 1.5; 
+  letter-spacing: 0.05em; 
+  padding: 20px;
+  margin: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px; 
+}
+
+header {
+  background-color: #C0C0C0;
+  color: #343434;
+  padding: 20px;
+  text-align: center;
+  position: initial;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #343434;
+  text-decoration: none;
+} 
+
+section {
+  padding: 100px 50px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 1200px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+h2 {
+  color: #343434;
+}  
+
+#home {
+  background-color: #0d7946; 
+  color: rgb(214, 163, 126);
+  text-align: center;
+}
+
+.vertical-line {
+  width: 2px; 
+  height: 100px; 
+  background-color: #343434; 
+  margin: 20px auto; 
+}
+
+h1.firstspacing {
+  line-height: 0.5;
+  font-size: 70px; /* Corrected to a more reasonable font size */
+  font-weight: 500;
+  font-style: oblique;
+}
+
+.workwithmebutton {
+    display: block;
+    width: max-content;
+    margin: 20px;
+    padding: 10px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    background-color: #0d7946; 
+    color: rgb(214, 163, 126); 
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s;
+    margin: 20px auto;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    border-radius: 5px; 
+}
+
+.workwithmebutton2 {
+  display: block;
+  width: max-content;
+  margin: 20px;
+  padding: 10px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  background-color: #92E4BE; 
+  color: #343434; 
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s;
+  margin: 20px auto;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  border-radius: 5px; 
+}
+
+#about, #services, #contact {
+  background-color: #92E4BE; 
+  color: #343434;
+}
+
+#portfolio {
+  background-color: #0d7946; 
+  color: rgb(214, 163, 126);
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-image {
+  max-width: 50%;
+  border-radius: 10px;
+  margin-right: 40px;
+}
+
+.text-content {
+  max-width: 60%;
+}
+
+#about h2 {
+  color: rgb(92, 48, 17);
+}
+
+#about p {
+  color: #343434;
+}
+
+.text-content p {
+  font-size: 16px;
+  color: #5C4633;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+#services h2 {
+  font-size: 48px;
+  margin-bottom: 40px;
+  color: rgb(92, 48, 17);
+}
+
+.rights {
+  text-align: center;
+}
+
+.servicesboxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#mainbox {
+  padding: 10px;
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+#box {
+  flex: 1 1 300px;
+  padding: 20px;
+  max-width: 300px;
+}
+
+#box h3 {
+  font-size: 25px;
+  margin-bottom: 15px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  font-weight: 1000;
+  color: rgb(92, 48, 17);
+}
+
+#box p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.portfolio-item {
+  margin-bottom: 40px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+}
+
+#portfolio h2 {
+  font-size: 48px;
+  margin-bottom: 40px;
+  color: rgb(214, 163, 126);
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
