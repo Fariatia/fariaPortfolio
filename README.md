@@ -60,5 +60,5 @@ Distributed under the MIT License. See LICENSE.txt for more information.
 
 ## Contact
 Your Name - farihatiamiyu@gmail.com
-Project Link: [https://github.com/your-username/your-repository-name](https://github.com/Fariatia/fariaPortfolio.git)
+Project Link: [https://github.com/Fariatia/fariaPortfolio.git](https://github.com/Fariatia/fariaPortfolio.git)
     
