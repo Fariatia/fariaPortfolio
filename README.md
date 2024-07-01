@@ -59,6 +59,6 @@ Don't forget to give the project a star! Thanks again!
 Distributed under the MIT License. See [LICENSE.txt](https://github.com/Fariatia/fariaPortfolio/blob/master/LICENSE.txt) for more information.
 
 ## Contact
-Your Name - farihatiamiyu@gmail.com
+Faria Tiamiyu-Folarin
 Project Link: [https://github.com/Fariatia/fariaPortfolio.git](https://github.com/Fariatia/fariaPortfolio.git)
     
