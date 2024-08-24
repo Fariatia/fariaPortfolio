@@ -13,7 +13,7 @@ body {
   line-height: 1.7;
 }
 
-/*.fancy-handwriting {
+.fancy-handwriting {
   font-family: 'Playwrite NG Modern', cursive; 
   font-size: 24px; 
   font-optical-sizing: auto;
@@ -25,7 +25,7 @@ body {
   margin: 20px;
   background-color: #f0f0f0;
   border-radius: 10px; 
-}*/
+}
 
 header {
   background-color: rgba(233, 232, 232, 0.89);
@@ -84,7 +84,7 @@ h2 {
   text-stroke: 0.009px white;
 }  
 
-#home, #services {
+#home {
   background-color: rgba(13, 121, 71, 0.644);
   color: white;
   text-align: center;
@@ -127,30 +127,6 @@ h2 {
   background-color: #114c41;
 }
 
-/*.workwithmebutton2 {
-  display: block;
-  width: max-content;
-  margin: 20px;
-  padding: 10px 25px;
-  font-size: 16px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  background-color: #92E4BE; 
-  color: #343434; 
-  border-radius: 50px;
-  border: none;
-  transition: background-color 0.3s;
-  margin: 20px auto;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  border-radius: 5px; 
-}
-
-#about, #services, #contact {
-  background-color: #92E4BE; 
-  color: #343434;
-}
-*/
 #about {
   background-color: rgba(237, 243, 240, 0.473);
   padding: 100px 20px;
@@ -193,14 +169,10 @@ h2 {
   text-stroke: 0.009px white;
 }
 
-  /*
-
-.text-content p {
-  font-size: 16px;
-  color: #5C4633;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}*/
+#services {
+  background-color: rgba(13, 121, 71, 0.568);
+  color: white;
+}
 
 #services, #contact h2 {
   text-align: center;
@@ -223,13 +195,6 @@ h2 {
   -webkit-text-stroke: 0.009px white;
   text-stroke: 0.009px white;
 }
-
-/*#mainbox {
-  padding: 10px;
-  flex-grow: 2;
-  display: flex;
-  flex-direction: column;
-}*/
 
 #box {
   padding: 20px;
