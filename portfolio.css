@@ -148,7 +148,7 @@ h2 {
 
 .about-image {
   flex: 1;
-  max-width: 100%;
+  max-width: 50%;
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
