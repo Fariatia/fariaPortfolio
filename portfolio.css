@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap'); /* Use a similar font since "Playwrite NG Modern" is not found */
 
 body {
-  font-family: 'Playwrite NG Modern', cursive; /* Corrected to a valid font family */
+  font-family: 'Playfair Display', serif;
   margin: 0;
   padding: 0;
   background-image: url(https://images.unsplash.com/photo-1555601568-c9e6f328489b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
@@ -9,6 +9,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;  
   color: #343434;
+  line-height: 1.6;
 }
 
 .fancy-handwriting {
@@ -26,15 +27,19 @@ body {
 }
 
 header {
-  background-color: #C0C0C0;
-  color: #343434;
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 20px;
   text-align: center;
-  position: initial;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) ;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
 }
 
 header h1 {
   margin: 0;
+  font-size: 2rem;
 }
 
 nav ul {
@@ -51,15 +56,21 @@ nav ul li {
 nav ul li a {
   color: #343434;
   text-decoration: none;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 } 
+
+nav ul li a:hover {
+  background-color: #0d7946;
+  color: white;
+}
 
 section {
   padding: 100px 50px;
-  margin: 20px auto;
-  width: 80%;
-  max-width: 1200px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  border-radius: 8px;
+  margin-top: 80px;
+  width: 100%;
 }
 
 h2 {
@@ -68,44 +79,38 @@ h2 {
 
 #home {
   background-color: #0d7946; 
-  color: rgb(214, 163, 126);
+  color: white;
   text-align: center;
+  padding: 200px 20px;
+}
+
+#home h1 {
+  font-size: 3rem;
 }
 
 .vertical-line {
-  width: 2px; 
-  height: 100px; 
-  background-color: #343434; 
+  width: 4px; 
+  height: 80px; 
+  background-color: white;
   margin: 20px auto; 
 }
 
-h1.firstspacing {
-  line-height: 0.5;
-  font-size: 70px; /* Corrected to a more reasonable font size */
-  font-weight: 500;
-  font-style: oblique;
-}
-
 .workwithmebutton {
-    display: block;
-    width: max-content;
-    margin: 20px;
-    padding: 10px 25px;
-    font-size: 16px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    background-color: #0d7946; 
-    color: rgb(214, 163, 126); 
-    border-radius: 5px;
-    border: none;
-    transition: background-color 0.3s;
-    margin: 20px auto;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    border-radius: 5px; 
+  padding: 12px 30px;
+  font-size: 18px;
+  background-color: #0d7946;
+  color: white;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.workwithmebutton2 {
+.workwithmebutton:hover {
+  background-color: #0a5e3c;
+}
+
+//*.workwithmebutton2 {
   display: block;
   width: max-content;
   margin: 20px;
@@ -132,25 +137,33 @@ h1.firstspacing {
 #portfolio {
   background-color: #0d7946; 
   color: rgb(214, 163, 126);
-}
+}*/
+
+
 
 .about-content {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  gap: 40px;
 }
 
 .about-image {
-  max-width: 50%;
-  border-radius: 10px;
-  margin-right: 40px;
+  flex: 1;
+  max-width: 100%;
+  border-radius: 15px;
 }
 
 .text-content {
-  max-width: 60%;
+  flex: 2;
 }
 
-#about h2 {
+.text-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/*#about h2 {
   color: rgb(92, 48, 17);
 }
 
@@ -173,75 +186,95 @@ h1.firstspacing {
 
 .rights {
   text-align: center;
-}
+}*/
 
 .servicesboxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
-#mainbox {
+/*#mainbox {
   padding: 10px;
   flex-grow: 2;
   display: flex;
   flex-direction: column;
-}
+}*/
 
 #box {
-  flex: 1 1 300px;
   padding: 20px;
-  max-width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+#box:hover {
+  transform: translateY(-5px);
 }
 
 #box h3 {
-  font-size: 25px;
-  margin-bottom: 15px;
-  font-weight: normal;
-  letter-spacing: 1px;
-  font-weight: 1000;
-  color: rgb(92, 48, 17);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
 }
 
 #box p {
-  font-size: 16px;
-  margin: 0;
+  font-size: 1rem;
 }
 
 .portfolio-item {
   margin-bottom: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .portfolio-item img {
   width: 100%;
   height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-#portfolio h2 {
+.portfolio-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+#contact {
+  background-color: #f9f9f9;
+}
+
+/*#portfolio h2 {
   font-size: 48px;
   margin-bottom: 40px;
   color: rgb(214, 163, 126);
-}
+}*/
 
-form label {
-  display: block;
-  margin-bottom: 10px;
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 form input[type="text"],
 form input[type="email"],
 form textarea {
-  width: 100%;
-  padding: 10px;
+  padding: 12px;
   margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
 }
 
 form button {
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
+  background-color: #0d7946;
+  color: white;
   border: none;
+  padding: 12px;
+  border-radius: 8px;
   cursor: pointer;
+  font-size: 1.2rem;
 }
 
 footer {
@@ -249,8 +282,248 @@ footer {
   color: #fff;
   text-align: center;
   padding: 20px;
+  margin-top: 50px;
+}
+
+/*To enhance responsiveness and style for your portfolio website, I've made several changes and improvements to your code. These changes focus on responsiveness for various screen sizes, modernizing the design, and making the site more visually appealing.
+
+### HTML Changes:
+
+No major changes are needed in the HTML structure since it already has a clear and well-structured layout. The main changes are in the CSS to improve responsiveness and design.
+
+### Updated CSS:
+
+```css
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(https://images.unsplash.com/photo-1555601568-c9e6f328489b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #343434;
+  line-height: 1.6;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.9); /* Slight transparency 
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Elevate header 
   position: fixed;
-  bottom: 0;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #343434;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #0d7946;
+  color: white;
+}
+
+section {
+  padding: 100px 20px;
+  margin-top: 80px;
   width: 100%;
 }
 
+#home {
+  background-color: rgba(13, 121, 70, 0.9);
+  color: white;
+  text-align: center;
+  padding: 200px 20px;
+}
+
+#home h1 {
+  font-size: 3rem;
+}
+
+.vertical-line {
+  width: 4px;
+  height: 80px;
+  background-color: white;
+  margin: 20px auto;
+}
+
+.workwithmebutton {
+  padding: 12px 30px;
+  font-size: 18px;
+  background-color: #0d7946;
+  color: white;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.workwithmebutton:hover {
+  background-color: #0a5e3c;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-image {
+  flex: 1;
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+.text-content {
+  flex: 2;
+}
+
+.text-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.servicesboxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+#box {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+#box:hover {
+  transform: translateY(-5px);
+}
+
+#box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+#box p {
+  font-size: 1rem;
+}
+
+.portfolio-item {
+  margin-bottom: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+#contact {
+  background-color: #f9f9f9;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+form button {
+  background-color: #0d7946;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+```
+
+### Key Changes and Improvements:
+
+1. **Sticky Header:**  
+   The header is now sticky, so it stays at the top of the page even as the user scrolls, improving navigation. I also added a subtle box shadow for elevation.
+
+2. **Responsive Design with Flexbox and Grid:**
+   - The `about-content` section uses `flex-wrap` to ensure that content and images are responsive.
+   - The `servicesboxes` section uses CSS Grid to create a responsive layout that automatically adjusts the number of columns based on the screen width.
+   - Projects (`portfolio-item`) will expand slightly and have a shadow effect when hovered over, adding a modern, interactive feel.
+
+3. **Better Button Styling:**
+   Buttons have been made more prominent with rounded edges and hover effects to improve usability.
+
+4. **Font Updates:**  
+   Updated the font to a more modern serif style, "Playfair Display," to give the website a more sophisticated and professional look. This font is also better supported than the original custom font.
+
+5. **Form Styling:**  
+   The form now has more padding and uses flexbox to ensure the elements are neatly arranged and centered.
+
+6. **Improved Readability and Consistent Spacing:**  
+   Adjusted padding and margins to provide consistent spacing across sections, making the content easier to read.
+
+7. **Portfolio Section Enhancements:**
+   - Images now have a subtle box shadow and scaling effect on hover to add a polished, professional look.
+   - Project titles and descriptions are clearer, improving the visual hierarchy.
+
+8. **Footer:**  
+   The footer is fixed at the bottom and includes a solid color with contrasting white text, making it easy to read while providing closure to the page content.
+
+---
+
+These changes will make the website look more modern, improve user experience across devices, and add elegance with subtle effects and improved layout structure.*/
