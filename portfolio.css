@@ -189,16 +189,9 @@ h2 {
   gap: 20px;
 }
 
-#services p {
-  color: rgb(0, 0, 0);
-  text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8); /* White shadow */
-  -webkit-text-stroke: 0.009px white;
-  text-stroke: 0.009px white;
-}
-
 #box {
   padding: 20px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.863);
   border-radius: 15px;
   text-align: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
