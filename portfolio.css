@@ -29,7 +29,7 @@ body {
 
 header {
   background-color: rgba(233, 232, 232, 0.89);
-  padding: 9px 0;
+  padding: 5px 0;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) ;
   position: fixed;
@@ -84,8 +84,8 @@ h2 {
   text-stroke: 0.009px white;
 }  
 
-#home {
-  background-color: rgba(13, 121, 70, 0.85);
+#home, #services {
+  background-color: rgba(13, 121, 71, 0.644);
   color: white;
   text-align: center;
   padding: 150px 20px;
