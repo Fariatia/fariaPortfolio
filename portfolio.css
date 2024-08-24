@@ -225,7 +225,7 @@ h2 {
 }
 
 #portfolio {
-  padding: 100px 20px;
+  padding: 50px 20px;
   background-color: #f9f9f9;
   color: #343434;
 }
@@ -243,7 +243,7 @@ h2 {
 }
 
 .portfolio-item img {
-  max-width: 100%;
+  max-width: 40%;
   height: auto;
   border-radius: 10px;
   object-fit: scale-down;
