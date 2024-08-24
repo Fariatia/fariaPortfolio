@@ -200,14 +200,13 @@ h2 {
   color: #5C4633;
   line-height: 1.6;
   margin-bottom: 20px;
-}
+}*/
 
 #services h2 {
-  font-size: 48px;
+  text-align: center;
+  font-size: 3rem;
   margin-bottom: 40px;
-  color: rgb(92, 48, 17);
 }
-*/
 .rights {
   text-align: center;
 }
