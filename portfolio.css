@@ -231,7 +231,7 @@ h2 {
 }
 
 .portfolio-item {
-  min-width: 300px;
+  max-width: 300px;
   flex: 0 0 auto; 
   text-align: center;
   background-color: white;
@@ -246,7 +246,7 @@ h2 {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
-  object-fit: cover;
+  object-fit: scale-down;
 }
 
 .portfolio-item:hover {
@@ -292,8 +292,7 @@ h2 {
 .portfolio-wrapper {
   display: flex;
   overflow-x: auto;
-  scroll-snap-type: x mandatory; /* Smooth snapping for scroll */
-  gap: 20px;
+  scroll-snap-type: x mandatory;
   padding-bottom: 20px;
 }
 
