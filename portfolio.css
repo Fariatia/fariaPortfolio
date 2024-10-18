@@ -258,6 +258,7 @@ h2 {
 
 .portfolio-wrapper::-webkit-scrollbar {
   height: 10px;
+  margin: 20px;
 }
 
 .portfolio-wrapper::-webkit-scrollbar-thumb {
