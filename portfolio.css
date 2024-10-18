@@ -218,11 +218,14 @@ h2 {
   padding: 50px 20px;
   background-color: #f9f9f994;
   color: #343434;
+  justify-content: space-between;
 }
 
 .portfolio-item {
   max-width: 300px;
   flex: 0 0 auto; 
+  width: 300px; 
+  height: 450px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.616);
   border-radius: 10px;
@@ -233,10 +236,10 @@ h2 {
 }
 
 .portfolio-item img {
-  max-width: 40%;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
   border-radius: 10px;
-  object-fit: scale-down;
 }
 
 .portfolio-item:hover {
@@ -254,6 +257,14 @@ h2 {
   font-size: 1rem;
   margin-top: 10px;
   color: #555;
+}
+
+.portfolio-wrapper {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 20px;
+  gap: 20px;
 }
 
 .portfolio-wrapper::-webkit-scrollbar {
