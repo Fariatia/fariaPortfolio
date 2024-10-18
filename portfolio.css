@@ -221,7 +221,6 @@ h2 {
 }
 
 .portfolio-item {
-  max-width: 400px;
   flex:0, 0, 50; 
   text-align: center;
   background-color: rgba(255, 255, 255, 0.616);
@@ -256,9 +255,28 @@ h2 {
   color: #555;
 }
 
+.portfolio-item1 {
+    float: left;
+    width: 25%;
+    height: 280px;
+}
+
+.portfolio-item2 {
+    float: left;
+    width: 25%;
+    height: 280px;
+}
+
+.portfolio-item3 {
+  float: right;
+  width: 25%;
+  height: 280px;
+}
+
 .portfolio-wrapper {
   display: grid;
   gap: 20px;
+  flex: ;
 }
 
 .portfolio-wrapper::-webkit-scrollbar {
