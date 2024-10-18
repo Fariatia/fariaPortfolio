@@ -276,7 +276,6 @@ h2 {
 .portfolio-wrapper {
   display: grid;
   gap: 20px;
-  flex: ;
 }
 
 .portfolio-wrapper::-webkit-scrollbar {
