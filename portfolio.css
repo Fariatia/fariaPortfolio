@@ -258,19 +258,19 @@ h2 {
 .portfolio-item1 {
     float: left;
     width: 25%;
-    height: 280px;
+    height: 400px;
 }
 
 .portfolio-item2 {
     float: left;
     width: 25%;
-    height: 280px;
+    height: 400px;
 }
 
 .portfolio-item3 {
   float: right;
   width: 25%;
-  height: 280px;
+  height: 400px;
 }
 
 .portfolio-wrapper {
